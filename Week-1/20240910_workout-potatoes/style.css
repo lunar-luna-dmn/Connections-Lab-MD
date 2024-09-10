@@ -1,0 +1,135 @@
+html {
+    height: 100%;
+}
+body {
+    height: 99%;
+    background-image: url('./media/bg-hot.jpg');
+    background-size: cover;
+    /* attempt to scroll the background */
+    /* animation-name: move;
+    animation-duration: 10s;
+    animation-iteration-count: infinite; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* attempt to scroll the background */
+/* @keyframes move {
+    0% {
+        transform: translateX(0vw);
+    }
+    100% {
+        transform: translateX(100vw);
+    }
+} */
+
+.top-banner {
+    height:10%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+    align-items: center;
+    min-width: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: #FCDB48;
+}
+
+
+.section-tv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 300px;
+    animation-name: slide;
+    animation-duration: 3s;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateY(-50vh);
+    }
+    100% {
+        transform: translateY(0vh);
+    }
+}
+
+.bottom-banner {
+    height:10%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: end;
+    align-items: center;
+    min-width: 50px;
+    font-size: 20px;
+    color:antiquewhite;
+}
+
+.marquee {
+    display: flex;
+    overflow: hidden;
+    gap: 2rem;
+    /* padding-top: 1rem;
+    padding-bottom: 1rem; */
+    white-space: nowrap;
+}
+
+.marquee__group {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    min-width: 100%;
+    animation: scroll 12s linear infinite reverse;
+  }
+
+@keyframes scroll {
+    from {
+        transform: translateX(calc(-100% - 2rem));
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.font1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:18px;
+}
+
+.font2 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style:italic;
+}
+
+
+.font3 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size:18px;
+}
+
+.font4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style:italic;
+    font-size:18px;
+}
+
+.font5 {
+    font-family: cursive;
+    font-size:18px;
+}
+
+.font6 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: italic;
+    font-size:18px;
+}
+
+.footer {
+    height: 10px;
+    font-family: monospace;
+    font-size:8px;
+    color:antiquewhite
+}
