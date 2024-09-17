@@ -1,0 +1,104 @@
+/* Sample code (single line only) from https://css-tricks.com/snippets/css/typewriter-effect/ */
+/* GLOBAL STYLES */
+body {
+    background: #333;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+  
+  /* DEMO-SPECIFIC STYLES */
+  .typewriter {
+    margin-top: 200px;
+    padding: 30px;
+    width:600px;
+  }
+  
+  .typewriter p {
+    color: #fff;
+    font-family: monospace;
+    font-size:18px;
+    text-align: left;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .3em solid limegreen; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    word-break: break-all;
+    /* margin: 0 auto; Gives that scrolling effect as the typing happens */
+    /* letter-spacing: .15em; Adjust as needed */
+  }
+
+  .typewriter p:nth-child(1){
+    width: 22.5em;
+    opacity: 0;
+    animation: 
+      typing 3.5s steps(30, end),
+      blink .5s step-end infinite;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+  }
+
+  .typewriter p:nth-child(2){
+    width: 37.5em;
+    opacity: 0;
+    animation: 
+      typing 4.5s steps(50, end),
+      blink .5s step-end infinite;
+    animation-delay: 4.5s;
+    animation-fill-mode: forwards;
+  }
+
+  .typewriter p:nth-child(3){
+    width: 17em;
+    opacity: 0;
+    animation: 
+      typing 3.5s steps(30, end),
+      blink .5s step-end infinite;
+    animation-delay: 9.5s;
+    animation-fill-mode: forwards;
+  }
+
+  #help-button {
+    width: 6em;
+    opacity: 1;
+    color:limegreen;
+    text-decoration: underline;
+    animation: 
+      typing 1.5s steps(15, end),
+      blink .5s step-end infinite;
+    animation-delay: 13.5s;
+    animation-fill-mode: forwards;
+/* 
+    animation: erase 1s; */
+    /* animation-delay: 14.5s; */
+  }
+  
+  #help-button:hover{
+    font-weight:bold;
+    cursor:pointer;
+  }
+
+  /* The typing effect */
+  @keyframes typing {
+    0% {width: 0}
+    1% {opacity:1}
+    100% {opacity:1}
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink {
+    from, to { border-color: transparent }
+    50% { border-color: limegreen }
+  }
+
+  /* Erasing effect */
+  .erasure {
+    animation: erase 5s; 
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes erase {
+    0% {opacity:1}
+    100% {opacity: 0.5} /* set to 0.5 to easier debug */
+  }
+
