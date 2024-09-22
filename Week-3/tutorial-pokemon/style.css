@@ -1,0 +1,26 @@
+body {
+    background-color: lightblue;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
+h1 {
+    padding: 10vh;
+    text-align: center;
+    color: whitesmoke;
+}
+
+#random-pokemon-name {
+    color: hotpink  ;
+}
+
+.container {
+    text-align: center;
+    color: yellow;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.pokemon-name {
+    font-size: 25px;
+}

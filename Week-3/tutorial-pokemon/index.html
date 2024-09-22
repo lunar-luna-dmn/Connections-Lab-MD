@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width">
+		<title>Single Fetch Example - Pokemon</title>
+	    <link rel="stylesheet" type="text/css" href="style.css" />
+	</head>
+	<body>
+		<!-- CONTENT GOES HERE -->
+		<h1> Your Pokemon of the Day is: <span id="random-pokemon-name"> </span></h1>
+        <section class="container"> 
+            <h2 class = "subheading"> Enter Pokemon Name </h2>
+            <div class="button-div">
+            <input id = "input-name"> </input>
+            <button id="pokemon-button"> Get Info </button>
+          </div>  
+            <div id="pokemon-info">
+                <h3 class="pokemon-name" id="p-name"></h3>
+                <img class="pokemon-image" id="p-img"/>
+                <!-- <p class="pokemon-weight" id="p-weight"></p> -->
+                <div class="pokemon-abilities" id="p-abilities"></div>
+            </div>
+        </section>  
+		<script type="text/javascript" src="script.js"></script>
+	</body>
+</html>
