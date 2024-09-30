@@ -4,7 +4,7 @@ document.addEventListener("mousewheel", (e) => {
 });
 
 let myKey = "5KS37821jmWz0xnrBKSGGETsVwCYDcID";
-let year = "2022";
+let year = "2024";
 let beginDate = year +"0101";
 let endDate = year +"1231";
 let subwayRequestURL = "https://api.nytimes.com/svc/search/v2/articlesearch.json?&q=subway&" + "begin_date=" + beginDate + "&end_date=" + endDate + "&fq=headline.search(%22subway%22%20%22MTA%22)%26glocations(%22NEW%20YORK%20CITY%22)&sort=relevance&api-key=" + myKey;
