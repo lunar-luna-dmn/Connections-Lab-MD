@@ -1,0 +1,247 @@
+html {
+    background-image: url("media/grid.jpeg");
+    background-size:contain;
+    
+}
+
+@font-face{
+    font-family: "Subway Font";
+    src: url("NYCSubwayFont.otf");
+}
+
+.subway-font {
+    font-family: "Subway Font";
+    font-size:xx-large;
+    background-color: white;
+}
+
+.scroll-container {
+    display:flex;
+    flex-wrap:nowrap;
+    align-content: space-around;
+    gap:15vw;
+    height: 95vh;
+    flex-shrink: 0;
+}
+
+.home-section {
+    border:2px red solid;
+    margin:5vw 12vw;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    align-items: center;
+}
+
+#home-header {
+    width: 16em;
+    font-size:4em;
+    word-wrap:break-word;
+    text-align:center;
+    text-wrap:wrap;
+}
+
+.articles-section {
+    border:2px red solid;
+    margin:5vw;
+    width: 100vw; /* how to set a fixed width ???/*/
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+}
+
+.articles-container {
+    display: flex;
+    justify-content: space-between;
+    border:2px orange solid;
+    padding:2%;
+    gap:2vw;
+}
+
+.articles-header {
+    margin-bottom: 1em;
+}
+
+.article-poster {
+    position: relative;
+    width: 70%;
+    border:5px black solid;
+    border-radius: 1px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    font-size:medium;
+    padding: 10px;
+}
+
+#article-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    filter:brightness(40%);
+    z-index: -1;
+}
+
+#poster-header {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+#poster-headline {
+    position: relative;
+    font-size:xx-large;
+    font-style:italic;
+    color:yellow;
+    z-index:1;
+    margin:0;
+}
+
+#poster-abstract{
+    color:white;
+    font-size:large;
+}
+
+#poster-link a {
+    color:white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.articles-headlines {
+    width:30%;
+    border:5px black solid;
+    background-color: #111111;
+    color:white;
+    padding:2px;
+    max-height:100%;
+    font-size:smaller;
+    cursor: pointer;
+}
+
+.year-section {
+    border: 1px red solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.keywords-section {
+    border:2px red solid;
+    margin:5vw;
+    font-size: xxx-large;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+}
+
+.keywords-header {
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.ten-keywords p {
+    margin:-10px;
+    overflow-x:visible;
+    text-wrap:nowrap;
+}
+
+.ten-keywords p:nth-child(1){
+    font-family: "Bangers", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(129, 129, 129);
+    text-align: center;
+    margin-right: -1em;
+}
+
+.ten-keywords p:nth-child(2){
+    font-family: "Rock Salt", cursive;
+    font-size: auto;
+    color:rgb(241, 43, 212);
+    font-weight: 400;
+    font-style: bold;
+    text-align: left;
+    margin-left: -1em;
+}
+
+.ten-keywords p:nth-child(3){
+    font-family: "Sarina", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color:rgb(98, 14, 177);
+    text-align: center;
+    margin-left: -2em;
+}
+
+.ten-keywords p:nth-child(4){
+    font-family: "Sedgwick Ave Display", cursive;
+    font-weight: 400;
+    font-style: normal;
+    text-align: right;
+    color: rgb(131, 194, 36);
+    margin-right: -1em;
+}
+
+.ten-keywords p:nth-child(5){
+    font-family: "Rock Salt", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: x-large;
+    text-align: center;
+    margin-left: -5em;
+}
+
+.ten-keywords p:nth-child(6){
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    color:rgb(181, 65, 23);
+    text-align: right;
+    margin-right: 4em;
+}
+
+.ten-keywords p:nth-child(7){
+    font-family: "Comforter Brush", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: xxx-large;
+    color:rgb(93, 99, 210);
+    text-align: right;
+}
+
+.ten-keywords p:nth-child(8){
+    font-family: "Sarina", cursive;
+    font-weight: 400;
+    font-style: normal;
+    text-align: left;
+    margin-left: 4em;
+}
+
+.ten-keywords p:nth-child(9){
+    font-family: "Bangers", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    text-align: right;
+    color:rgb(215, 171, 9);
+    text-decoration:green wavy underline;
+    margin-right: -2em;
+}
+
+.ten-keywords p:nth-child(10){
+    font-family: "Sedgwick Ave Display", cursive;
+  font-weight: 400;
+  font-style: normal;
+    color:rgb(113, 199, 221);
+}
+
+.about-section {
+    border:2px red solid;
+    margin:5vw;
+    margin-right:200px; /* why doens't it work?? */
+}
