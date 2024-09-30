@@ -1,6 +1,0 @@
-1. make uniform width for each section
-2. fix the margin of About section
-3. add keywords function
-4. add year selector
-5. add rat running across the page (p5) or have rat follow the mouse (bagel)
-6. add mosaic art of subway motifs and make them portals
