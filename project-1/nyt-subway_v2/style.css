@@ -25,7 +25,7 @@ html {
 }
 
 .home-section {
-    border:2px red solid;
+/*     border:2px red solid; */
     margin:5vw 12vw;
     display:flex;
     flex-direction:column;
@@ -42,7 +42,7 @@ html {
 }
 
 .articles-section {
-    border:2px red solid;
+/*     border:2px red solid; */
     margin:5vw;
     width: 100vw; /* how to set a fixed width ???/*/
     display:flex;
@@ -53,7 +53,7 @@ html {
 .articles-container {
     display: flex;
     justify-content: space-between;
-    border:2px orange solid;
+/*     border:2px orange solid; */
     padding:2%;
     gap:2vw;
 }
@@ -123,7 +123,7 @@ html {
 }
 
 .year-section {
-    border: 1px red solid;
+/*     border: 1px red solid; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -131,7 +131,7 @@ html {
 }
 
 .keywords-section {
-    border:2px red solid;
+/*     border:2px red solid; */
     margin:5vw;
     font-size: xxx-large;
     display:flex;
