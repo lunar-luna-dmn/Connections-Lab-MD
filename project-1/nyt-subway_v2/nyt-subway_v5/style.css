@@ -1,0 +1,271 @@
+html {
+    background-image: url("media/grid.jpeg");
+    background-size:contain;
+}
+
+@font-face{
+    font-family: "Subway Font";
+    src: url("fonts/NYCSubwayFont.otf");
+}
+
+@font-face{
+    font-family: "Another Tag";
+    src: url("fonts/aAnotherTag.otf");
+}
+
+@font-face{
+    font-family: "Urban Graffiti";
+    src: url("fonts/Urban\ Graffiti\ PERSONAL\ USE\ ONLY.ttf");
+}
+
+@font-face{
+    font-family: "Graffiti Youth";
+    src: url("fonts/GraffitiYouth.otf");
+}
+
+@font-face{
+    font-family: "Mars";
+    src: url("fonts/MARSNEVENEKSK.otf");
+}
+
+@font-face {
+    font-family: "Most Wasted";
+    src: url("fonts/Mostwasted.ttf");
+}
+
+.subway-font {
+    font-family: "Subway Font";
+    font-size:xx-large;
+    background-color: white;
+}
+
+.scroll-container {
+    display:flex;
+    flex-wrap:nowrap;
+    align-content: space-around;
+    gap:20vw;
+    max-height: 95vh;
+    /* flex-shrink: 0; */
+}
+
+.home-section {
+    /* border:2px red solid; */
+    margin:5vw 12vw;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    align-items: center;
+}
+
+#home-header {
+    margin-top: -0.6em;
+    width: 16em;
+    font-size:4em;
+    word-wrap:break-word;
+    text-align:center;
+    text-wrap:wrap;
+}
+
+.graffiti {
+    z-index: -10;
+    position: absolute;
+    text-wrap: nowrap;
+}
+
+#graffiti-1 {
+    margin-top:2em;
+    margin-left: 27em;
+    font-family: "Urban Graffiti", "Sedgwick Ave Display", cursive;
+    font-weight: 400;
+    font-size: 2.5em;
+    font-style: normal;
+    text-wrap: wrap;
+    min-width: 50px;
+    color: #ee352e;
+    transform: rotate(-15deg);
+    /* opacity:0%; */
+    /* animation: drop .5s forwards;
+    animation-delay: 2s; */
+}
+
+@keyframes drop {
+    0% {transform: scale(200);
+    opacity:0%}
+    1% {opacity:100%}
+    100% { transform: scale(1) rotate(-15deg);
+    opacity:100%}
+}
+
+
+#graffiti-2 {
+    margin-left: -1em;
+    padding-top: 2em;
+    margin-bottom:0;
+    font-family: "Mars";
+    font-size: 16em;
+    color: #fccc0a;
+}
+
+#graffiti-3 {
+    margin-left: -1em;
+    padding-top: 1.9em;
+    margin-bottom:0;
+    font-family: "Mars";
+    font-size: 16em;
+    color: #0039a6;
+}
+
+.articles-section {
+    /* border:2px red solid; */
+    margin:5vw;
+    min-width: 70vw; /* how to set a fixed width ???/*/
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    overflow: visible;
+}
+
+.articles-container {
+    display: flex;
+    justify-content: space-between;
+    /* border:2px orange solid; */
+    padding:2%;
+    gap:2vw;
+}
+
+.articles-header {
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.article-poster {
+    position: relative;
+    width: 70%;
+    border:5px black solid;
+    border-radius: 1px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    font-size:medium;
+    padding: 10px;
+}
+
+#article-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    filter:brightness(40%);
+    z-index: -1;
+}
+
+#poster-header {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+#poster-headline {
+    position: relative;
+    font-size:xx-large;
+    font-style:italic;
+    color:yellow;
+    z-index:1;
+    margin:0;
+}
+
+#poster-abstract{
+    color:white;
+    font-size:large;
+}
+
+#poster-link a {
+    color:white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.articles-headlines {
+    width:30%;
+    border:5px black solid;
+    background-color: #111111;
+    color:white;
+    padding:2px;
+    max-height:100%;
+    font-size:smaller;
+    cursor: pointer;
+}
+
+.articles-headlines p:hover {
+    color: yellow;
+}
+
+.year-section {
+    /* border: 1px red solid; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+#left-arrow {
+    cursor:pointer;
+}
+
+#graffiti-4 {
+    margin-top: -2.2em;
+    margin-left: 1.1em;
+    font-family: "Another Tag", "Mars", "Urban Graffiti";
+    font-size: 13em;
+    color: rgb(245, 21, 197);
+    transform: rotate(10deg);
+}
+
+.keywords-section {
+    /* border:2px red solid; */
+    /* min-width: 70vw; */
+    margin:5vw;
+    font-size: xx-large;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+}
+
+.keywords-header {
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.ten-keywords p {
+    margin:.2em;
+    font-family: Impact, Helvetica, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    overflow-x:visible;
+    text-wrap:nowrap;
+}
+
+.ten-keywords p:hover {
+    text-decoration: line-through yellow 4px;
+    cursor:pointer;
+    z-index: 2
+}
+
+#graffiti-5 {
+    font-family: "Most Wasted", "Another Tag";
+    color: #059e0b;
+    line-height: .8;
+    font-size: 1.5em;
+    transform: rotate(-8deg);
+    margin-left: 12em;
+    margin-top: 4em;
+}
+
+.about-section {
+    /* border:2px red solid; */
+    text-align: center;
+    margin:5vw;
+    min-width: 500px;
+}
