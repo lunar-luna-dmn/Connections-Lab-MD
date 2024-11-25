@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Child</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="scroll-container">
+    <div class="text-container">
+        <div class="text-div-center" id="text1">There is nothing but warm, sticky blackness</div>
+        <div class="text-div-left" id="text2">Before you can open your eyes <br>
+            sounds – or screams to be more precise – <br>
+            reach you first</div>
+        <div class="text-div-sp" id="text3">
+            <span style="margin-left: -25em; margin-top: 0em; margin-bottom: 2em">“Great god!”</span>
+            <span style="margin-left: -10em; margin-top: 2em; margin-bottom: 2em">“You are a curse.”</span>
+            <span style="margin-left: 20em; margin-top: 2em; margin-bottom: 2em">“Nothing can contain your wrath.”</span>
+            <span style="margin-left: -5em; margin-top: 2em; margin-bottom: 2em">“Disgusting!”</span>
+        </div>
+        <div id="text4">
+          <div class="button-container">
+              <a href="#" class="outlined-button">You want to be unborn</a>
+              <a href="#" class="outlined-button">You want to be born</a>
+          </div>
+      </div>
+    </div>
+    <div class="gradient-bg">
+        <svg xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <filter id="goo">
+              <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+              <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8" result="goo" />
+              <feBlend in="SourceGraphic" in2="goo" />
+            </filter>
+          </defs>
+        </svg>
+        <div class="gradients-container">
+          <div class="g1"></div>
+          <div class="g2"></div>
+          <div class="g3"></div>
+          <div class="g4"></div>
+          <div class="g5"></div>
+          <div class="mouse-interactive"></div>
+        </div>
+    </div>
+  </div> <!-- end of scroll-container -->
+  <script type="module" src="main.js"></script>
+</body>
+</html>
